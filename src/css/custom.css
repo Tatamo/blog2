@@ -4,6 +4,11 @@
  * work well for content-centric websites.
  */
 
+/* ページの高さによらずスクロールバーを常に表示し、
+   有無の切り替わりによるレイアウトの横ずれを防ぐ */
+html {
+  overflow-y: scroll;
+}
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
