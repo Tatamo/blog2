@@ -12,7 +12,7 @@ html {
 /* You can override the default Infima variables here. */
 :root {
   /* タイトルとサブタイトルの2行を余裕をもって収めるための高さと余白 */
-  --ifm-navbar-height: 7rem;
+  --ifm-navbar-height: 6rem;
   --ifm-navbar-padding-horizontal: 2.5rem;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;

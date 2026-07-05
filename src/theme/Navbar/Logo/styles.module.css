@@ -12,7 +12,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: var(--ifm-font-weight-bold);
   line-height: 1.2;
 }
@@ -25,7 +25,7 @@
 
 @media (max-width: 996px) {
   .title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .tagline {
