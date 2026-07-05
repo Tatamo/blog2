@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>わたしろぐ2 Blog</title>
+        <title>わたしろぐ2</title>
         <link>https://tatamo.github.io/blog2</link>
         <description>わたしろぐ2 Blog</description>
         <lastBuildDate>Sun, 05 Jul 2026 00:00:00 GMT</lastBuildDate>
