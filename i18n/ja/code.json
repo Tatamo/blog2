@@ -1,0 +1,6 @@
+{
+  "theme.blog.tagTitle": {
+    "message": "「{tagName}」タグの記事が{nPosts}あります",
+    "description": "公式ja翻訳の「{nPosts}件あります」は{nPosts}自体が「1件」になるため「1件件」と重複する。件を除いた文言で上書きする"
+  }
+}
