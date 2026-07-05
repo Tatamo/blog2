@@ -1,0 +1,34 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.brand:hover {
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: var(--ifm-font-weight-bold);
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  line-height: 1.2;
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+}

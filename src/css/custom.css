@@ -11,6 +11,9 @@ html {
 }
 /* You can override the default Infima variables here. */
 :root {
+  /* タイトルとサブタイトルの2行を余裕をもって収めるための高さと余白 */
+  --ifm-navbar-height: 7rem;
+  --ifm-navbar-padding-horizontal: 2.5rem;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -20,4 +23,11 @@ html {
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-navbar-height: 5.5rem;
+    --ifm-navbar-padding-horizontal: 1rem;
+  }
 }

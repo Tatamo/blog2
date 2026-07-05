@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'わたしろぐ2',
-  tagline: '',
+  tagline: '私録その2',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -66,7 +66,6 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'わたしろぐ2',
       items: [
         {to: '/about', label: 'About', position: 'left'},
       ],
