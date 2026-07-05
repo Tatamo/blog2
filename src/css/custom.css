@@ -32,6 +32,22 @@ html {
   }
 }
 
+/* モバイルのドロワーメニューを右端のハンバーガーボタンに合わせて右から出す。
+   このファイルはカスケードレイヤー外でテーマ側の指定に常に勝つため、
+   閉状態だけでなく開状態のtransformも合わせて定義する必要がある */
+/* 幅はwidthではなく変数で広げる。内部パネルの幅やサブメニューへの
+   スライド距離も同じ変数から計算されるため、揃えないと隣のパネルの端が見える */
+.navbar-sidebar {
+  --ifm-navbar-sidebar-width: 100%;
+  left: auto;
+  right: 0;
+  transform: translate3d(100%, 0, 0);
+}
+
+.navbar-sidebar--show .navbar-sidebar {
+  transform: translate3d(0, 0, 0);
+}
+
 /* 見出しはh1=32px(2rem)基準のスケールに統一する。
    Infimaの基本値がこのスケールなので、
    マークダウン本文と記事タイトルに入っている拡大の上書きを打ち消す */
