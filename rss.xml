@@ -4,15 +4,37 @@
         <title>わたしろぐ2</title>
         <link>https://tatamo.github.io/blog2</link>
         <description>わたしろぐ2 Blog</description>
-        <lastBuildDate>Sun, 05 Jul 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Jul 2026 14:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <item>
+            <title><![CDATA[目次表示テスト]]></title>
+            <link>https://tatamo.github.io/blog2/toc-test</link>
+            <guid>https://tatamo.github.io/blog2/toc-test</guid>
+            <pubDate>Sun, 05 Jul 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[目次（右側に表示される見出しリスト）の表示確認用のテスト記事です。確認が終わったら削除してください。]]></description>
+            <content:encoded><![CDATA[<p>目次（右側に表示される見出しリスト）の表示確認用のテスト記事です。確認が終わったら削除してください。</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="最初のセクション">最初のセクション</h2>
+<p>本文です。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="最初のセクションの小見出し">最初のセクションの小見出し</h3>
+<p>本文です。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="もうひとつの小見出し">もうひとつの小見出し</h3>
+<p>本文です。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="次のセクション">次のセクション</h2>
+<p>本文です。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="最後のセクション">最後のセクション</h2>
+<p>本文です。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="最後のセクションの小見出し">最後のセクションの小見出し</h3>
+<p>本文です。</p>]]></content:encoded>
+            <category>dev</category>
+        </item>
+        <item>
             <title><![CDATA[Hello World]]></title>
             <link>https://tatamo.github.io/blog2/hello-world</link>
             <guid>https://tatamo.github.io/blog2/hello-world</guid>
-            <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 05 Jul 2026 09:58:56 GMT</pubDate>
             <description><![CDATA[ブログを開設しました。]]></description>
             <content:encoded><![CDATA[<p>ブログを開設しました。</p>
 <!-- -->
