@@ -38,9 +38,12 @@ const config: Config = {
         docs: false,
         blog: {
           routeBasePath: '/',
-          showReadingTime: true,
+          blogTitle: 'わたしろぐ2',
+          showReadingTime: false,
+          postsPerPage: 5,
           feedOptions: {
             type: ['rss', 'atom'],
+            title: 'わたしろぐ2',
             xslt: true,
           },
           // Useful options to enforce blogging best practices
@@ -57,7 +60,9 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'わたしろぐ2',
@@ -71,7 +76,6 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };
