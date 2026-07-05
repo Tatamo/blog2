@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog2=self.webpackChunkblog2||[]).push([["466"],{9176(t){t.exports=JSON.parse('{"authors":[{"name":"Tatamo","url":"https://github.com/Tatamo","socials":{"x":"https://x.com/__tatamo__","github":"https://github.com/Tatamo"},"imageURL":"https://github.com/tatamo.png","key":"tatamo","page":null,"count":1}]}')}}]);
