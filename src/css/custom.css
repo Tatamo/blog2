@@ -31,3 +31,24 @@ html {
     --ifm-navbar-padding-horizontal: 1rem;
   }
 }
+
+/* 見出しはh1=32px(2rem)基準のスケールに統一する。
+   Infimaの基本値がこのスケールなので、
+   マークダウン本文と記事タイトルに入っている拡大の上書きを打ち消す */
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2rem;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+}
+
+.markdown > h3 {
+  --ifm-h3-font-size: 1.25rem;
+}
+
+/* 記事タイトルは記事ページ(h1)・一覧ページ(h2)とも32pxで揃える */
+article header h1[class*='title_'],
+article header h2[class*='title_'] {
+  font-size: 2rem;
+}
