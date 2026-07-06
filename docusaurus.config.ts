@@ -67,7 +67,7 @@ const config: Config = {
     },
     navbar: {
       items: [
-        {to: '/about', label: 'About', position: 'left'},
+        {to: '/about', label: 'About', position: 'right'},
       ],
     },
     footer: {
