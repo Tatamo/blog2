@@ -45,7 +45,7 @@ export default function MDXPage(props: Props): ReactNode {
         />
         <main className="container margin-vert--lg">
           <div className="row">
-            <div className="col col--8">
+            <div className="col blog-main-col">
               <ContentVisibility metadata={metadata} />
               <article>
                 <MDXContent>

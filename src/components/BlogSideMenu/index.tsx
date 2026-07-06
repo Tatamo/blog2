@@ -71,9 +71,8 @@ export default function BlogSideMenu({
 }: {
   sidebar: SidebarProp;
 }): ReactNode {
-  // offsetで右端に寄せ、本文との間に余白を置く
   return (
-    <aside className="col col--3 col--offset-1">
+    <aside className="col col--3 blog-side-col">
       <div className={clsx(styles.sideMenu, 'thin-scrollbar')}>
         {sidebar && sidebar.items.length > 0 && (
           <RecentPostsSection sidebar={sidebar} />

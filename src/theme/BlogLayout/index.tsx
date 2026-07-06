@@ -13,7 +13,7 @@ export default function BlogLayout(props: Props): ReactNode {
     <Layout {...layoutProps}>
       <div className="container margin-vert--lg">
         <div className="row">
-          <main className="col col--8">{children}</main>
+          <main className="col blog-main-col">{children}</main>
           <BlogSideMenu sidebar={sidebar} />
         </div>
       </div>

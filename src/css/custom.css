@@ -14,6 +14,9 @@ html {
   /* タイトルとサブタイトルの2行を余裕をもって収めるための高さと余白 */
   --ifm-navbar-height: 6rem;
   --ifm-navbar-padding-horizontal: 2.5rem;
+  /* コンテナ幅を全画面幅で1320pxに統一する。既定では1440px以上でのみ
+     1140px→1320pxに広がるため、境界でレイアウトが180pxジャンプする */
+  --ifm-container-width: 1320px;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -46,6 +49,28 @@ html {
 
 .navbar-sidebar--show .navbar-sidebar {
   transform: translate3d(0, 0, 0);
+}
+
+/* 本文とコードブロックの幅制御。
+   基準値はコンテナ最大幅1320px時のカラム幅:
+   本文=col--7相当の770px、コードブロック=col--9相当の990px(=75%)。
+   画面が狭くなったときは、まずコードブロックのはみ出し分が縮み、
+   はみ出しがなくなる幅までは本文の770pxを維持する */
+@media (min-width: 997px) {
+  .blog-main-col {
+    --ifm-col-width: min(770px, 75%);
+  }
+
+  /* サイドメニューを右端に寄せ、本文との間の余白に伸縮を吸収させる */
+  .blog-side-col {
+    margin-left: auto;
+  }
+
+  /* 散文と違いコードは行の折り返しがなく長い行が多いため、
+     本文右の余白へはみ出させて横スクロールの頻度を下げる */
+  .markdown > .theme-code-block {
+    margin-right: min(0px, calc(770px - min(990px, 75vw)));
+  }
 }
 
 /* 見出しはh1=32px(2rem)基準のスケールに統一する。
