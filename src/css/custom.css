@@ -35,6 +35,13 @@ html {
   }
 }
 
+/* フッターは背景色を付けず、テキスト・アイコンも本文と同じ配色にする */
+.footer {
+  --ifm-footer-background-color: transparent;
+  --ifm-footer-color: var(--ifm-font-color-base);
+  --ifm-footer-link-color: var(--ifm-font-color-base);
+}
+
 /* ナビバーの中身を本文コンテナと同じ幅に制限して中央寄せし、
    タイトルの左端を本文の左端、右端のリンクをサイドメニューの右端に揃える。
    2 * spacing の減算はカラムのパディングによるテキスト位置の補正 */

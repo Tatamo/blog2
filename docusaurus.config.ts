@@ -71,7 +71,6 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} Tatamo. Built with Docusaurus.`,
     },
     prism: {

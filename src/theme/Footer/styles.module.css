@@ -1,0 +1,5 @@
+.footerSocials {
+  justify-content: center;
+  color: var(--ifm-footer-link-color);
+  margin-bottom: 0.75rem;
+}

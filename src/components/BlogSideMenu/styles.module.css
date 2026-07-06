@@ -33,25 +33,6 @@
   color: var(--ifm-color-primary) !important;
 }
 
-/* アイコンリンクは著者欄(Blog/Components/Author/Socials)の見た目に合わせている */
-.socialLinks {
-  display: flex;
-  align-items: center;
-}
-
-.socialLink {
-  height: 1.2rem;
-  width: 1.2rem;
-  line-height: 0;
-  margin-right: 0.6rem;
-  color: var(--ifm-font-color-base);
-}
-
-.socialIcon {
-  width: 100%;
-  height: 100%;
-}
-
 /* Infimaのグリッドが縦積みになる幅では、本文の下に区切り線付きで表示する */
 @media (max-width: 996px) {
   .sideMenu {
