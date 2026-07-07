@@ -1,5 +1,6 @@
 import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import {
   useVisibleBlogSidebarItems,
   BlogSidebarItemList,
@@ -9,21 +10,13 @@ import styles from './styles.module.css';
 
 type SidebarProp = BlogLayoutProps['sidebar'];
 
-function Section({title, children}: {title: ReactNode; children: ReactNode}) {
-  return (
-    <section className="margin-bottom--lg">
-      <div className={clsx(styles.sectionTitle, 'margin-bottom--md')}>
-        {title}
-      </div>
-      {children}
-    </section>
-  );
-}
-
 function RecentPostsSection({sidebar}: {sidebar: NonNullable<SidebarProp>}) {
   const items = useVisibleBlogSidebarItems(sidebar.items);
   return (
-    <Section title={sidebar.title}>
+    <section className={styles.menuCard}>
+      <div className={clsx(styles.sectionTitle, 'margin-bottom--md')}>
+        {sidebar.title}
+      </div>
       <BlogSidebarItemList
         items={items}
         ulClassName={clsx(styles.itemList, 'clean-list')}
@@ -31,7 +24,7 @@ function RecentPostsSection({sidebar}: {sidebar: NonNullable<SidebarProp>}) {
         linkClassName={styles.itemLink}
         linkActiveClassName={styles.itemLinkActive}
       />
-    </Section>
+    </section>
   );
 }
 
@@ -43,6 +36,9 @@ export default function BlogSideMenu({
   return (
     <aside className="col col--3 blog-side-col">
       <div className={clsx(styles.sideMenu, 'thin-scrollbar')}>
+        <Link className={clsx(styles.menuCard, styles.aboutLink)} to="/about">
+          About
+        </Link>
         {sidebar && sidebar.items.length > 0 && (
           <RecentPostsSection sidebar={sidebar} />
         )}

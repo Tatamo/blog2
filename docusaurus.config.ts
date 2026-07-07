@@ -66,9 +66,7 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      items: [
-        {to: '/about', label: 'About', position: 'right'},
-      ],
+      items: [],
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Tatamo. Built with Docusaurus.`,

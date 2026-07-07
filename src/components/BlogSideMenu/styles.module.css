@@ -1,10 +1,20 @@
-/* 標準テーマのBlogSidebar/Desktopのスタイルを踏襲している */
+/* リスト部分は標準テーマのBlogSidebar/Desktopのスタイルを踏襲している */
 
 .sideMenu {
   max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 枠線カードは記事下のページネーション(.pagination-nav__link)の見た目に合わせている */
+.menuCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  padding: 1.25rem 1.5rem;
 }
 
 .sectionTitle {
@@ -26,11 +36,34 @@
 }
 
 .itemLink:hover {
+  color: var(--ifm-color-primary);
   text-decoration: none;
 }
 
 .itemLinkActive {
   color: var(--ifm-color-primary) !important;
+}
+
+.aboutLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--ifm-h3-font-size);
+  font-weight: var(--ifm-font-weight-bold);
+  color: var(--ifm-font-color-base);
+  transition: border-color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+/* 右端のチェブロンで、このカードがリンクであることを示す */
+.aboutLink::after {
+  content: '›';
+}
+
+.aboutLink:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
 }
 
 /* Infimaのグリッドが縦積みになる幅では、本文の下に区切り線付きで表示する */
