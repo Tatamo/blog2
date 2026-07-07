@@ -1,10 +1,10 @@
 /* リスト部分は標準テーマのBlogSidebar/Desktopのスタイルを踏襲している */
 
 .sideMenu {
-  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  max-height: calc(100vh - 4rem);
   overflow-y: auto;
   position: sticky;
-  top: calc(var(--ifm-navbar-height) + 2rem);
+  top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

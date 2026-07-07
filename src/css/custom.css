@@ -35,37 +35,22 @@ html {
   }
 }
 
+/* ナビバーはスクロールに追従させず、ページと一緒に流す */
+.navbar--fixed-top {
+  position: static;
+}
+
+/* ナビバーが固定でないため、アンカージャンプ時にナビバー分の
+   オフセットを取る必要がない */
+[class*='anchorWithStickyNavbar'] {
+  scroll-margin-top: 0.5rem;
+}
+
 /* フッターは背景色を付けず、テキスト・アイコンも本文と同じ配色にする */
 .footer {
   --ifm-footer-background-color: transparent;
   --ifm-footer-color: var(--ifm-font-color-base);
   --ifm-footer-link-color: var(--ifm-font-color-base);
-}
-
-/* ナビバーの中身を本文コンテナと同じ幅に制限して中央寄せし、
-   タイトルの左端を本文の左端、右端のリンクをサイドメニューの右端に揃える。
-   2 * spacing の減算はカラムのパディングによるテキスト位置の補正 */
-.navbar__inner {
-  max-width: calc(
-    var(--ifm-container-width) - 2 * var(--ifm-spacing-horizontal)
-  );
-  margin: 0 auto;
-}
-
-/* モバイルのドロワーメニューを右端のハンバーガーボタンに合わせて右から出す。
-   このファイルはカスケードレイヤー外でテーマ側の指定に常に勝つため、
-   閉状態だけでなく開状態のtransformも合わせて定義する必要がある */
-/* 幅はwidthではなく変数で広げる。内部パネルの幅やサブメニューへの
-   スライド距離も同じ変数から計算されるため、揃えないと隣のパネルの端が見える */
-.navbar-sidebar {
-  --ifm-navbar-sidebar-width: 100%;
-  left: auto;
-  right: 0;
-  transform: translate3d(100%, 0, 0);
-}
-
-.navbar-sidebar--show .navbar-sidebar {
-  transform: translate3d(0, 0, 0);
 }
 
 /* 本文とコードブロックの幅制御。
