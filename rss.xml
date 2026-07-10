@@ -4,43 +4,20 @@
         <title>わたしろぐ2</title>
         <link>https://tatamo.github.io/blog2</link>
         <description>わたしろぐ2 Blog</description>
-        <lastBuildDate>Sun, 05 Jul 2026 14:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Jul 2026 09:58:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <item>
-            <title><![CDATA[目次表示テスト]]></title>
-            <link>https://tatamo.github.io/blog2/toc-test</link>
-            <guid>https://tatamo.github.io/blog2/toc-test</guid>
-            <pubDate>Sun, 05 Jul 2026 14:00:00 GMT</pubDate>
-            <description><![CDATA[目次（右側に表示される見出しリスト）の表示確認用のテスト記事です。確認が終わったら削除してください。]]></description>
-            <content:encoded><![CDATA[<p>目次（右側に表示される見出しリスト）の表示確認用のテスト記事です。確認が終わったら削除してください。</p>
-<!-- -->
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="最初のセクション">最初のセクション</h2>
-<p>本文です。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="最初のセクションの小見出し">最初のセクションの小見出し</h3>
-<p>本文です。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="もうひとつの小見出し">もうひとつの小見出し</h3>
-<p>本文です。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="次のセクション">次のセクション</h2>
-<p>本文です。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="最後のセクション">最後のセクション</h2>
-<p>本文です。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="最後のセクションの小見出し">最後のセクションの小見出し</h3>
-<p>本文です。</p>]]></content:encoded>
-            <category>dev</category>
-        </item>
-        <item>
-            <title><![CDATA[Hello World]]></title>
+            <title><![CDATA[テスト記事]]></title>
             <link>https://tatamo.github.io/blog2/hello-world</link>
             <guid>https://tatamo.github.io/blog2/hello-world</guid>
             <pubDate>Sun, 05 Jul 2026 09:58:56 GMT</pubDate>
-            <description><![CDATA[ブログを開設しました。]]></description>
-            <content:encoded><![CDATA[<p>ブログを開設しました。</p>
+            <description><![CDATA[新しいブログを開設しました。]]></description>
+            <content:encoded><![CDATA[<p>新しいブログを開設しました。</p>
 <!-- -->
-<p>この記事は雛形です。自由に書き換えてください。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="本文幅確認用のダミーテキスト">本文幅確認用のダミーテキスト</h2>
-<p>ここから下は本文コンテンツの横幅を判断するためのダミーテキストです。確認が終わったら削除してください。</p>
+<p>ここから下は本文コンテンツの横幅を判断するためのダミーテキストです。確認が終わったら削除します。</p>
 <p>技術ブログの本文というものは、短い文と長い文が入り混じって構成されるのが普通です。たとえばこの段落のように、ある程度の長さを持った説明的な文章が数行にわたって折り返されるとき、一行あたりの文字数が多すぎると視線が行末から次の行頭へ戻る際に迷子になりやすく、逆に少なすぎると視線の往復が頻繁になりすぎて、どちらの場合も読んでいて疲れる文章になってしまいます。</p>
 <p>短い段落もあります。</p>
 <p>一方で、技術記事には「インストールしたパッケージのバージョンとロックファイルの内容が一致していることを確認してから、開発サーバーを再起動してキャッシュを無効化する」といった、区切りの少ない長い手順説明が登場することも多く、こうした文がどのように折り返されるかも幅を判断する材料になります。カタカナの専門用語やコンポーネント、ディレクトリといった長い単語が行末に来たときの見え方も確認しておきたいところです。</p>
