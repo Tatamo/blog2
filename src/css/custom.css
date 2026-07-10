@@ -17,13 +17,12 @@ html {
   /* コンテナ幅を全画面幅で1320pxに統一する。既定では1440px以上でのみ
      1140px→1320pxに広がるため、境界でレイアウトが180pxジャンプする */
   --ifm-container-width: 1320px;
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* アクセントカラーの黄緑。darkとdarkerは通知ボックスやボタンの
+     テーマ既定値から参照されるため定義しておく(基準色の明度-10%/-15%)。
+     テーマから参照されない残りのバリエーション(darkest/light系)は定義しない */
+  --ifm-color-primary: #668000;
+  --ifm-color-primary-dark: #5c7300;
+  --ifm-color-primary-darker: #576d00;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
