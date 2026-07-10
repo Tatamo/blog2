@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import GitHubIcon from '@theme/Icon/Socials/GitHub';
+import XIcon from '@theme/Icon/Socials/X';
+import BoothIcon from '@site/src/assets/booth.svg';
 import styles from './styles.module.css';
 
 function RssIcon(props: ComponentProps<'svg'>): ReactNode {
@@ -33,6 +35,42 @@ export function RssLink(): ReactNode {
     <a className={styles.socialLink} href={rssUrl} title="RSS">
       <RssIcon className={styles.socialIcon} />
     </a>
+  );
+}
+
+// 著者(Tatamo)のXアカウント
+export function XLink(): ReactNode {
+  return (
+    <Link
+      className={styles.socialLink}
+      href="https://x.com/__tatamo__"
+      title="X">
+      <XIcon className={styles.socialIcon} />
+    </Link>
+  );
+}
+
+// 著者(Tatamo)のGitHubプロフィール
+export function GitHubProfileLink(): ReactNode {
+  return (
+    <Link
+      className={styles.socialLink}
+      href="https://github.com/Tatamo"
+      title="GitHub">
+      <GitHubIcon className={styles.socialIcon} />
+    </Link>
+  );
+}
+
+// 著者(Tatamo)のBOOTHショップ
+export function BoothLink(): ReactNode {
+  return (
+    <Link
+      className={styles.socialLink}
+      href="https://tatamo.booth.pm/"
+      title="BOOTH">
+      <BoothIcon className={styles.socialIcon} />
+    </Link>
   );
 }
 

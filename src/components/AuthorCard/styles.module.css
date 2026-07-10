@@ -1,0 +1,18 @@
+.authorCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: var(--ifm-font-weight-bold);
+  margin-bottom: 0.4rem;
+}
