@@ -39,6 +39,7 @@ const config: Config = {
         blog: {
           routeBasePath: '/',
           blogTitle: 'わたしろぐ2',
+          blogDescription: "Tatamo's weblog",
           blogSidebarTitle: '最近の記事',
           showReadingTime: false,
           postsPerPage: 5,
