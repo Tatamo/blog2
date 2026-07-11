@@ -1,4 +1,12 @@
 dev:
   label: dev
   permalink: /dev
-  description: Development tag description
+  description: 技術・開発
+diary:
+  label: diary
+  permalink: /diary
+  description: 日記・ポエム
+game:
+  label: game
+  permalink: /game
+  description: ゲーム
