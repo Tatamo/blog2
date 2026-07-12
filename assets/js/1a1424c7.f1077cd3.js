@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog2=self.webpackChunkblog2||[]).push([["695"],{6119(e){e.exports=JSON.parse('{"metadata":{"permalink":"/","page":1,"postsPerPage":5,"totalPages":1,"totalCount":1,"blogDescription":"Tatamo\'s weblog","blogTitle":"\u308F\u305F\u3057\u308D\u30502"}}')}}]);

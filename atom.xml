@@ -1,32 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://tatamo.github.io/blog2</id>
+    <id>https://blog.tatamo.dev</id>
     <title>わたしろぐ2</title>
-    <updated>2026-07-05T09:58:56.000Z</updated>
+    <updated>2026-07-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://tatamo.github.io/blog2"/>
+    <link rel="alternate" href="https://blog.tatamo.dev"/>
     <subtitle>わたしろぐ2 Blog</subtitle>
     <entry>
-        <title type="html"><![CDATA[テスト記事]]></title>
-        <id>https://tatamo.github.io/blog2/hello-world</id>
-        <link href="https://tatamo.github.io/blog2/hello-world"/>
-        <updated>2026-07-05T09:58:56.000Z</updated>
-        <summary type="html"><![CDATA[新しいブログを開設しました。]]></summary>
-        <content type="html"><![CDATA[<p>新しいブログを開設しました。</p>
+        <title type="html"><![CDATA[新しいブログを開設しました]]></title>
+        <id>https://blog.tatamo.dev/hello-world</id>
+        <link href="https://blog.tatamo.dev/hello-world"/>
+        <updated>2026-07-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[わたしろぐからブログを移転して、わたしろぐ2になりました。]]></summary>
+        <content type="html"><![CDATA[<p><a href="http://tatamo.81.la/blog/" target="_blank" rel="noopener noreferrer" class="">わたしろぐ</a>からブログを移転して、わたしろぐ2になりました。
+新しいブログを作るに至った経緯や技術選定について。</p>
 <!-- -->
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="本文幅確認用のダミーテキスト">本文幅確認用のダミーテキスト</h2>
-<p>ここから下は本文コンテンツの横幅を判断するためのダミーテキストです。確認が終わったら削除します。</p>
-<p>技術ブログの本文というものは、短い文と長い文が入り混じって構成されるのが普通です。たとえばこの段落のように、ある程度の長さを持った説明的な文章が数行にわたって折り返されるとき、一行あたりの文字数が多すぎると視線が行末から次の行頭へ戻る際に迷子になりやすく、逆に少なすぎると視線の往復が頻繁になりすぎて、どちらの場合も読んでいて疲れる文章になってしまいます。</p>
-<p>短い段落もあります。</p>
-<p>一方で、技術記事には「インストールしたパッケージのバージョンとロックファイルの内容が一致していることを確認してから、開発サーバーを再起動してキャッシュを無効化する」といった、区切りの少ない長い手順説明が登場することも多く、こうした文がどのように折り返されるかも幅を判断する材料になります。カタカナの専門用語やコンポーネント、ディレクトリといった長い単語が行末に来たときの見え方も確認しておきたいところです。</p>
-<p>コードブロックの見え方も確認します。</p>
-<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">default</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">BlogLayout</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">props</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">Props</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">ReactNode</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">sidebar</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> toc</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> _toc</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> children</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token spread operator" style="color:#393A34">...</span><span class="token plain">layoutProps</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> props</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Layout</span><span class="token tag" style="color:#00009f"> </span><span class="token tag spread punctuation" style="color:#393A34">{</span><span class="token tag spread operator" style="color:#393A34">...</span><span class="token tag spread" style="color:#00009f">layoutProps</span><span class="token tag spread punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">className</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">container margin-vert--lg</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">        </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">className</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">row</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">main</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">className</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag attr-value" style="color:#e3116c">col col--8</span><span class="token tag attr-value punctuation" style="color:#393A34">"</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">children</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">main</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">BlogSideMenu</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">sidebar</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">sidebar</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">        </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain-text">    </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Layout</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
-<ul>
-<li class="">箇条書きの項目が一行に収まる場合の見え方</li>
-<li class="">箇条書きの項目が長くなって折り返される場合の見え方も確認しておく必要があります。項目のインデント位置で折り返された行がどう揃うかがポイントです</li>
-<li class=""><code>インラインコード</code> を含む項目</li>
-</ul>
-<p>最後に、<code>--ifm-container-width-xl</code> のようなインラインコードが本文中に登場する場合の行の高さと折り返しを確認して、ダミーテキストはおしまいです。</p>]]></content>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="自前のブログに回帰するに至った経緯">自前のブログに回帰するに至った経緯</h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="またブログでも書くか">またブログでも書くか～</h3>
+<p>就職を機にブログを書かなくなり、そのまま5年ほどが経っていました。
+仕事以外でプログラムを書く頻度が減り、また業務関連の知見は社内向けのドキュメントとしてまとめて満足していたので、個人のブログに書くようなことがあまりないと感じていたためです。
+また、入社前後の時期は<a href="https://qiita.com/Tatamo" target="_blank" rel="noopener noreferrer" class="">Qiita</a>に技術記事を書いていたのですが、Zennやnoteの台頭でQiitaの勢いが落ちたことで、記事執筆から足が遠のいたようにも思います。</p>
+<p>最近は少し気が変わりつつあり、まとまった文章を置いておく場所がほしいと思う機会が少しずつ増えてきています。</p>
+<p>入社6年目ともなると、業務にも慣れ、ある程度の仕事をこなせるようになってきました。
+しかし、コードやドキュメントといった有形の資産を再利用することで効率を担保している部分は確実に存在します。
+要するに、毎回新しく何かを作るより、以前書いた設計やコードをコピペして新しいものを作ったほうが速いということです。</p>
+<p>そうなると感じるのが、もし会社を辞めたとして、現状と同じものが作れるのか、という疑問です。
+幸いなことに仕事には満足していて、向こう数年での転職は考えていないのですが、定年まで一つの会社で勤め上げるような業界ではないし、5年後や10年後にどうなっているかはわかりません。
+そこで、業務で得た知見を一般的に使える形で抽出し、会社を辞めた後もアクセスできるようにしておくことには一定の価値があると思うようになりました。
+もっとも、最近はAIにコーディングを任せられるようになってきていて、何を作るべきかがわかっていればその都度コードを生成できるので、古い資産のコピペにどれほどの価値が残るかわからなくなってきたところでもありますが。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="なぜ自前のブログか">なぜ自前のブログか</h3>
+<p>そういうわけで、たまには記事を書くようにしたい、というモチベーションは戻りつつあります。
+ただ、技術記事を書くだけならQiitaでいつでも書けるし、なぜ今自前でブログを構えるのかという話です。</p>
+<p>理由のひとつとして、技術記事以外も書きたいという話はあります。
+エンジニアお気持ちポエムの類を書き散らして気持ちよくなってみるというのも楽しそうですし、旧ブログで書いていたようなゲームの感想なども書ける場所があると嬉しいです。
+技術ブログ専門のプラットフォームで自分語りをするのは気が引けますが、自前のブログでなら何を書いてもよいでしょう。</p>
+<p>一方で、ブログであれば何でも良いというなら、簡単に書き始められるブログサービスもいくつかあります。
+技術記事はQiitaかZennで書いてポエムはnoteに書くとか、はてなブログを開設するという手もあります。なぜそうしないのでしょうか。</p>
+<p>はてなブログは個人的に昔から好感を持っていないのでいったん置くとして、なんかソーシャルっぽい感じとか「いいね」の数とかを気にしなくてよいほうが嬉しいと感じるようになってきました。
+評価が可視化されるとどうしても意識してしまうので、伸びる記事を書きたい、という気持ちが出てきて、気軽に記事を書くためのハードルが上がってしまうからです。
+もともと筆が遅いうえに長文の記事を書きがちという傾向はあるのですが、もっと短くて簡潔な記事も書いていきたいので、執筆までのハードルを下げていきたいわけです。</p>
+<p>6年前に「<a href="https://qiita.com/Tatamo/items/ae7bf4878abcf0584291" target="_blank" rel="noopener noreferrer" class="">ライセンスをつけないとどうなるの？</a>」という記事を書いたところ、ありがたいことに1,000を越えるいいねを頂くことができました。
+これぐらい数字が盛れたことで満足したし、これを越えようとすると相当気合いを入れないといけないわけですが、どちらかというと今は気合いの入っていない記事を書きたいので、このレースからは降りようと思っています。
+あと、今の技術ブログは何につけてもAIで、AI以外のことを書いても伸びる気はしないし、そもそも技術ブログ自体が相当下火になっている気がしますね。</p>
+<p>それで結局、いいねの数やシェアされた数などが表示されなくて心地良い自前のブログに戻ってきたというわけです。
+旧ブログの更新を再開するのではなく新しくブログを作り直したのは、単純に技術的な興味に加えて、旧ブログは古すぎて手をつける気が起きなかったためです。
+いまだにHTTPS対応していないというとんでもない問題を抱えているのに加えて、たしかに<a href="http://tatamo.81.la/blog/2016/01/05/hugo-deployment/" target="_blank" rel="noopener noreferrer" class="">自動デプロイのためのCIが組まれている</a>のですが、構築したのは10年以上前で、なんとGitHub Actionsが存在すらしていなかったころの代物です。
+なんとか手を入れれば刷新はできるだろうと思うものの気が重く、今時の技術スタックを使えば最初から作ったほうがモチベーションも上がるしモダンなワークフローが組めそうなので、新規で立ち上げることにしました。
+旧ブログのHTTPS対応や記事の移転などは頑張ればできそうですが、古いほうのリポジトリを触りたくないので結局手をつけないだろうと思います。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="新ブログを支える技術">新ブログを支える技術</h2>
+<p>新しいブログは <a href="https://github.com/Tatamo/blog2" target="_blank" rel="noopener noreferrer" class="">https://github.com/Tatamo/blog2</a> のリポジトリ上に構築することにしました。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="docusaurus">Docusaurus</h3>
+<p>旧ブログは<a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="">Hugo</a>を用いて作られていましたが、今回は<a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="">Docusaurus</a>を採用しました。
+どちらも静的サイトジェネレータですが、前者はGoのテンプレートを用いて、後者はReactベースで組むことができます。
+記事そのものをMarkdownで書くことはかわりないのですが、DocusaurusはMDXを公式にサポートしており、ReactコンポーネントをMarkdownの中に配置することができます。
+旧ブログでも記事の中にJavaScriptを書くことが稀にありましたが、HTMLタグを直接記述することになって大変だったので、ここの体験が良くなることは明確なメリットとして期待しています。</p>
+<p>Docusaurusを触ってみて感じたのは、典型的な、とにかくeasyな類のプロダクトであるということです。
+つまり、out of the boxの状態で非常にうまく機能し、セットアップからデプロイまで短期間で完了させることができます。
+一方でeasyさに振ったプロダクトにありがちな傾向として、決してsimpleなプロダクトというわけではなく、敷かれたレールから少しでも外れようとすると途端にコストが跳ね上がる構造になっているように感じられました。</p>
+<p>例を挙げると、このブログ右側のサイドバーにはタグの一覧を配置して、タグごとの件数を表示しようと考えていました。
+旧ブログがそのようになっていたためです。
+しかし、これは素直な方法では実装できません。
+どうやら、タグやタグごとの記事数はブログプラグインのスコープ内で引き回される情報で、サイドバーはそのスコープの外にあるため取得できないようです。
+もちろん可能ではありますが、何かしらのハックを行わなければ実現しづらそうだったので諦めています。</p>
+<p>レイアウトを拡張・変更する<a href="https://docusaurus.io/docs/swizzling" target="_blank" rel="noopener noreferrer" class="">Swizzling</a>の仕組みも、使用するためにはテーマのコンポーネント構造がどうなっているかを知る必要があります。
+たとえばフッターに表示する内容を変えようとした場合、対応するフッターコンポーネントをラップするか、そのコンポーネントの実装をリポジトリ内にコピーしてきて独自の実装に書き換えなければなりません。
+これは端的に言って学習コストと保守性に劣る設計で、AIに任せて調整できる範囲ならいいと思いますが、自分でしっかりデザインを組みたいなら他のSSGを使ったほうがいいでしょう。</p>
+<p>この記事を執筆したバージョン3.10時点ではメインテーマは1つだけ存在しており、用途がこれに適合するかどうかが、そのままDocusaurusの採用可否に結び付くといえます。
+またこのメインテーマは<a href="https://infima.dev/" target="_blank" rel="noopener noreferrer" class="">Infima</a>というDocusaurus以外で使われているところを見たことがない独自CSSフレームワークを採用しており、およそ必要とは思えない学習コストを支払わされるか、サポート状況の怪しいCSS-in-JSやSass/SCSSに切り替えるかの二択が生じることも忘れないほうが良さそうです。
+このブログは多少Docusaurusっぽさを脱色するように微調整しましたが、根本的にはシンプルなブログでしかないので、このぐらいならDocusaurusのメリットを享受できる範囲内かと思っています。</p>
+<p>Docusaurusに非常によくマッチする用途としては、開発者向けのドキュメントやAPIリファレンスが挙げられそうです。
+OpenAPIファイルからドキュメントを自動生成するプラグインもあり、用途には十分です。
+十分なクオリティがあり、デプロイも容易で、メンテナンスの必要が低いドキュメントサイトを簡単に立ち上げられるためベストマッチだと言えそうです。</p>
+<p>考えることが少なく済むのであればメンテナンスコストも低く、<code>npm install</code> してから <code>npm start</code> するだけで開発用サーバーが立ち上がり、 <code>npm run deploy</code> でビルドからGitHub Pagesへのpushまで行ってくれるのは非常に快適です。
+まだ組んでいませんがGitHub Actionsでの自動デプロイも簡単にできそうな雰囲気なので、このあたりはnpmのエコシステムを活かせていて素晴らしい体験だと思います。</p>
+<p>総じてDocusaurusは、公式に用意された設定を弄るだけの範囲であれば立ち上げが容易で、最初から一定のクオリティの見た目も担保されているので、考えることが少なくとても便利です。
+自分で何かを弄りたくなったら、本当は必要のない些細な変更であるか、Docusaurusを捨てるべきかのどちらかでしょう。
+easyなプロダクトとはそういうものです。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="codespaces">Codespaces</h3>
+<p>gitとnpmとエディタの入った開発環境さえあれば、簡単に記事を執筆してDocusaurusでデプロイできるので快適な執筆体験が獲得できたかのように思われました。
+問題は、gitとnpmとエディタの入った開発環境が手元にないということです。
+普段使いのWindowsマシンにはろくな開発環境を用意しておらず、ブログを書くためだけにセットアップの手間をかける気にもなれません。
+そこで、Web上から記事の執筆が完結できるのが望ましいと考えました。</p>
+<p>そういうわけで<a href="https://github.co.jp/features/codespaces" target="_blank" rel="noopener noreferrer" class="">GitHub Codespaces</a>を使うことにしました。
+他の選択肢としては、単にMarkdownを書くだけなのでテキストエディタで執筆する、GitベースのCMSを使う、という案がありました。
+Codespacesを採用したのは、実際に開発サーバーを立ち上げてリアルタイムでプレビューができる点と構築の手間が少ない点でより適していると考えたためです。</p>
+<p>リモートで実際に開発環境を立ち上げるというアプローチのため、ブログそのものの調整もCodespacesの中で完結させられるのも嬉しそうです。</p>
+<p>懸念があるとすればCodespacesは従量課金であるという点ですが、GitHubの個人用アカウントでは月に60時間の無料枠を利用できます。
+執筆頻度を考えるとこれで十分だと予測しており、仮に無料枠を超えた場合でも、それほど熱心にブログを書いているなら許容できる範囲だと判断しました。</p>
+<p>Codespacesの利用を始めるのは非常に簡単で、 <code>devcontainer.json</code> を定義してリポジトリに入れておくだけで、GitHubのWeb UI上からアクセスすることができます。
+普段VSCodeを使わないのでDev containersには詳しくありませんでしたが、Docusaurus自体の依存がシンプルなこともあり、AIに任せればコンテナの定義は簡単に用意できました。</p>
+<p>これでWeb上でコードエディタが開いて執筆でき、リアルタイムでプレビューもできるので快適になりました。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="所感">所感</h2>
+<p>ブログの記事を書きたいかも、と思うことは直近で何度かあったものの、レガシーな旧ブログを触ることを考えると腰が上がらない状態が続いていました。
+GitHubのブログのリポジトリページにアクセスすれば執筆を開始できるので、ハードルが下がってまた記事を書いていけたらと思っています。</p>
+<p>Docusaurusを触ってみることができたのも楽しかったです。
+使う前は、ある程度整ったテンプレートが最初から用意されていて、それを自分好みにカスタマイズできるモダンなSSGなのかな、という印象を持っていました。
+実際は、そのテンプレートから外れたことはほとんどできない（厳密には、できなくはないがDocusaurusでやる理由がない）が、あらかじめ定義された用途に沿うものなら超高速で構築できるピーキーなSSGだというのが、使ってみての所感です。
+とはいえ今回のブログ構築はシンプルに済ませようと考えていたので、今回の用途としてはある程度マッチしていると考えており満足しています。</p>
+<p>というか、Docusaurusと格闘してもらうところはすべてAIに任せたので不満がありません。良い時代になりました。</p>]]></content>
         <category label="dev" term="dev"/>
+        <category label="diary" term="diary"/>
     </entry>
 </feed>

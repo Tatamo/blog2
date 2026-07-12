@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog2=self.webpackChunkblog2||[]).push([["342"],{2937(e){e.exports=JSON.parse('{"tags":[{"label":"dev","permalink":"/tags/dev","description":"\u6280\u8853\u30FB\u958B\u767A","count":1},{"label":"diary","permalink":"/tags/diary","description":"\u65E5\u8A18\u30FB\u30DD\u30A8\u30E0","count":1}]}')}}]);

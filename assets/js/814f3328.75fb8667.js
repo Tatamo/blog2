@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog2=self.webpackChunkblog2||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"\u6700\u8FD1\u306E\u8A18\u4E8B","items":[{"title":"\u30C6\u30B9\u30C8\u8A18\u4E8B","permalink":"/blog2/hello-world","unlisted":false,"date":"2026-07-05T09:58:56.000Z"}]}')}}]);

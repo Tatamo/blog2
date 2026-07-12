@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog2=self.webpackChunkblog2||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"\u6700\u8FD1\u306E\u8A18\u4E8B","items":[{"title":"\u65B0\u3057\u3044\u30D6\u30ED\u30B0\u3092\u958B\u8A2D\u3057\u307E\u3057\u305F","permalink":"/hello-world","unlisted":false,"date":"2026-07-12T00:00:00.000Z"}]}')}}]);
