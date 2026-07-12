@@ -25,6 +25,9 @@ html {
   --ifm-color-primary-darker: #576d00;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* 基準文字サイズ。px決め打ちではなく%指定にすることで、
+     ブラウザの文字サイズ設定(既定16px)に対する比率として扱う */
+  --ifm-font-size-base: 106.25%;
 }
 
 @media (max-width: 996px) {
@@ -81,7 +84,7 @@ article footer a:not([class]) {
   }
 }
 
-/* 見出しはh1=32px(2rem)基準のスケールに統一する。
+/* 見出しはh1=2rem基準のスケールに統一する。
    Infimaの基本値がこのスケールなので、
    マークダウン本文と記事タイトルに入っている拡大の上書きを打ち消す */
 .markdown h1:first-child {
@@ -96,7 +99,7 @@ article footer a:not([class]) {
   --ifm-h3-font-size: 1.25rem;
 }
 
-/* 記事タイトルは記事ページ(h1)・一覧ページ(h2)とも32pxで揃える */
+/* 記事タイトルは記事ページ(h1)・一覧ページ(h2)とも2remで揃える */
 article header h1[class*='title_'],
 article header h2[class*='title_'] {
   font-size: 2rem;
