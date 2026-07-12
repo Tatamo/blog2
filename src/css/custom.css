@@ -45,6 +45,13 @@ html {
   scroll-margin-top: 0.5rem;
 }
 
+/* 記事本文中のリンクと一覧の「もっと見る」には常時下線を付ける。
+   footer側はタグのピルなどクラス付きのリンクを対象外にする */
+.markdown a,
+article footer a:not([class]) {
+  text-decoration: underline;
+}
+
 /* フッターは背景色を付けず、テキスト・アイコンも本文と同じ配色にする */
 .footer {
   --ifm-footer-background-color: transparent;

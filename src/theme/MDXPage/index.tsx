@@ -47,7 +47,9 @@ export default function MDXPage(props: Props): ReactNode {
           <div className="row">
             <div className="col blog-main-col">
               <ContentVisibility metadata={metadata} />
-              <article>
+              {/* ブログ記事本文と同じスタイル(リンクの下線・見出しの余白等)を
+                  適用するため、markdownクラスを付ける */}
+              <article className="markdown">
                 <MDXContent>
                   <MDXPageContent />
                 </MDXContent>
