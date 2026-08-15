@@ -16,6 +16,9 @@ npm run typecheck  # TypeScript の型チェック
 USE_SSH=true npm run deploy  # ビルドして gh-pages ブランチに push（公開）
 ```
 
+- origin が HTTPS のリポジトリでは、`USE_SSH` を明示しないと `docusaurus deploy` が `Please set the GIT_USER environment variable, or explicitly specify USE_SSH instead!` で失敗する（この判定自体は環境を問わず発生する）。
+- SSH 鍵が使えない環境（Codespaces など）では、`USE_SSH=true` を指定してもその後の SSH 認証で push に失敗する。その場合は環境側の HTTPS 用 credential helper（Codespaces なら `/.codespaces/bin/gitcredential_github.sh`）に認証を任せる `GIT_USER=<GitHubユーザー名> npm run deploy` を使う。
+
 - テストはない。変更の検証は `npm run build` で行う。`onBrokenLinks: 'throw'` 設定なのでリンク切れはビルドエラーになる。
 - 検証のためにビルドした場合、`build/` は残さず削除してよい（gitignore 済み）。
 
