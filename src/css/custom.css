@@ -168,3 +168,57 @@ article header h1[class*='title_'],
 article header h2[class*='title_'] {
   font-size: 2rem;
 }
+
+/* 脚注。テーマ側に .footnotes 向けのスタイルが一切ないため、
+   ここでまとめて定義する */
+
+/* 視覚的には隠すが読み上げには残す。remark-gfm が脚注セクションの見出し
+   (「脚注」)にこのクラスを付けるが、Infima に定義がないため自前で用意する。
+   本文との区切りは下の border-top が担う */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 本文より一段小さくし、罫線で本文と切り離す。
+   文字サイズは em 指定にして、インラインコードの相対サイズ指定と連動させる */
+.markdown .footnotes {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding-top: 1.25rem;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+/* 項目間隔。脚注の中身は<p>に包まれるため、既定では箇条書きにはない
+   li内の段落の余白(上1rem=--ifm-list-paragraph-margin、下1.25rem=--ifm-leading)が
+   加わり、本文の箇条書き(項目間0.25rem)よりずっと広くなる。
+   段落の余白を落としたうえで、項目間は箇条書きと同じ比率(0.25em)に揃える */
+.markdown .footnotes li > p {
+  margin-top: 0;
+  /* 複数段落の脚注を書いたときの段落間。最後の段落の下は詰める */
+  margin-bottom: 0.75em;
+}
+
+.markdown .footnotes li > p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown .footnotes li + li {
+  margin-top: 0.25em;
+}
+
+/* 注釈番号が直に連続したとき(例: [^1][^2])に「1と2」が「12」に見えないよう
+   間隔をあける。下線が繋がらないよう padding ではなく margin で取る。
+   CSSの隣接セレクタでは間にテキストのある注釈番号まで拾ってしまうため、
+   このクラスは src/rehype/footnotes.ts がビルド時に付けている */
+.markdown sup.footnote-ref-adjacent {
+  margin-left: 0.25em;
+}
