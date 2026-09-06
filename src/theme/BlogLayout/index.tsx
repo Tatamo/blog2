@@ -11,8 +11,8 @@ export default function BlogLayout(props: Props): ReactNode {
 
   return (
     <Layout {...layoutProps}>
-      <div className="container margin-vert--lg">
-        <div className="row">
+      <div className="container blog-layout-container margin-vert--lg">
+        <div className="row blog-layout-row">
           <main className="col blog-main-col">{children}</main>
           <BlogSideMenu sidebar={sidebar} />
         </div>

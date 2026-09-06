@@ -43,8 +43,8 @@ export default function MDXPage(props: Props): ReactNode {
           keywords={keywords}
           image={image}
         />
-        <main className="container margin-vert--lg">
-          <div className="row">
+        <main className="container blog-layout-container margin-vert--lg">
+          <div className="row blog-layout-row">
             <div className="col blog-main-col">
               <ContentVisibility metadata={metadata} />
               {/* ブログ記事本文と同じスタイル(リンクの下線・見出しの余白等)を
