@@ -25,7 +25,7 @@ USE_SSH=true npm run deploy  # ビルドして gh-pages ブランチに push（�
 - **`authors` は書かない**。一人で執筆するブログなので著者表示は意図的に削除済み（`blog/authors.yml` も存在しない）。
 - タグは `blog/tags.yml` に定義してから使う（`onInlineTags: 'warn'`）。
 - 一覧ページでの表示を区切る位置に `{/* truncate */}` を入れる。
-- 引用の出典（書名など）は、引用の最後に空行を置いて `> — 『書名』 p.406` のようにダッシュで始まる段落として書く。`src/rehype/blockquoteCitation.ts` がこれを figcaption として切り出し、引用本文と違う見せ方をする。ダッシュで始めない限り出典扱いにはならない。
+- 引用元（書名など）は、引用ブロックの直後に `<QuoteSource>『書名』 p.406</QuoteSource>` と書く（`src/components/QuoteSource`。`src/theme/MDXComponents.tsx` に登録済みなので import は不要）。引用本文とは別の見せ方（引用の面の外・小さめ・右寄せ）になる。
 - 記事ではない単発ページ（About など）は `src/pages/` に置く。
 
 ## 意図的な設定（元に戻さない）

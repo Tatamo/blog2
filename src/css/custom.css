@@ -241,22 +241,16 @@ article header h2[class*='title_'] {
   padding: 1rem 1.25rem;
 }
 
-/* 出典付きの引用。出典は引用の面の中ではなく外(下)に置くので、
-   figure 自体は面を持たず、引用と出典を縦に並べるだけの入れ物にする
-   (組み替えているのは src/rehype/blockquoteCitation.ts)。
-   figure のブラウザ既定マージン(左右40px)もここで打ち消す */
-.markdown .quote {
-  margin: 0 0 var(--ifm-leading);
-}
-
-.markdown .quote > blockquote {
-  margin-bottom: 0;
-}
-
-/* 出典は引用本文と見せ方を変える。小さめ・薄めで右に寄せる */
-.markdown .quote > figcaption {
+/* 引用元の表記(src/components/QuoteSource)。引用の面の外(下)に、
+   引用本文と見せ方を変えて小さめ・薄めで右に寄せる */
+.markdown .quote-source {
   margin-top: 0.5em;
   color: var(--ifm-color-emphasis-700);
   font-size: 0.875em;
   text-align: right;
+}
+
+/* 引用元が続くときは、引用の下マージンを詰めて一体に見せる */
+.markdown blockquote:has(+ .quote-source) {
+  margin-bottom: 0;
 }

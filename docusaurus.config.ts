@@ -2,7 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {ElementContent} from 'hast';
-import rehypeBlockquoteCitation from './src/rehype/blockquoteCitation';
 import rehypeFootnotes from './src/rehype/footnotes';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -75,7 +74,7 @@ const config: Config = {
         docs: false,
         blog: {
           routeBasePath: '/',
-          rehypePlugins: [rehypeFootnotes, rehypeBlockquoteCitation],
+          rehypePlugins: [rehypeFootnotes],
           blogTitle: 'わたしろぐ2',
           blogDescription: "Tatamo's weblog",
           blogSidebarTitle: '最近の記事',
@@ -92,7 +91,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         pages: {
-          rehypePlugins: [rehypeFootnotes, rehypeBlockquoteCitation],
+          rehypePlugins: [rehypeFootnotes],
         },
         theme: {
           customCss: './src/css/custom.css',
