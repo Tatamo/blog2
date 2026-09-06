@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type {ElementContent} from 'hast';
+import rehypeFootnotes from './src/rehype/footnotes';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -26,6 +28,40 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  markdown: {
+    // 脚注(remark-gfm)の既定値は英語表記なので日本語に差し替える
+    remarkRehypeOptions: {
+      // ページ末尾の脚注セクションの見出し。custom.css の .sr-only で
+      // 視覚的には隠し、読み上げにだけ残している
+      footnoteLabel: '脚注',
+      footnoteBackLabel: (referenceIndex: number, rereferenceIndex: number) =>
+        `本文に戻る ${referenceIndex + 1}${
+          rereferenceIndex > 1 ? `-${rereferenceIndex}` : ''
+        }`,
+      // 戻りリンクの記号。U+21A9 は絵文字表現を持つため、環境によっては
+      // 絵文字フォントで描画される。U+FE0E(テキスト異体字セレクタ)を
+      // 付けて文字としての表示を指示する。
+      // 同じ脚注が複数箇所から参照されたときに連番を添えるのは既定と同じ
+      footnoteBackContent: (
+        _referenceIndex: number,
+        rereferenceIndex: number,
+      ): ElementContent | ElementContent[] => {
+        const backArrow: ElementContent = {type: 'text', value: '↩\uFE0E'};
+        return rereferenceIndex > 1
+          ? [
+              backArrow,
+              {
+                type: 'element',
+                tagName: 'sup',
+                properties: {},
+                children: [{type: 'text', value: String(rereferenceIndex)}],
+              },
+            ]
+          : backArrow;
+      },
+    },
+  },
+
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
@@ -38,6 +74,7 @@ const config: Config = {
         docs: false,
         blog: {
           routeBasePath: '/',
+          rehypePlugins: [rehypeFootnotes],
           blogTitle: 'わたしろぐ2',
           blogDescription: "Tatamo's weblog",
           blogSidebarTitle: '最近の記事',
@@ -52,6 +89,9 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+        },
+        pages: {
+          rehypePlugins: [rehypeFootnotes],
         },
         theme: {
           customCss: './src/css/custom.css',
