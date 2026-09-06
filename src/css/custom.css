@@ -222,3 +222,41 @@ article header h2[class*='title_'] {
 .markdown sup.footnote-ref-adjacent {
   margin-left: 0.25em;
 }
+
+/* 引用。既定の --ifm-blockquote-font-size は --ifm-font-size-base を参照するが、
+   このサイトは基準文字サイズを比率(106.25%)で指定しているため、その比率が
+   そのまま拡大率として効いて引用だけ本文より大きくなる。ここで指定し直す。
+   面の背景はコードブロックと同系のグレーなので、左のアクセント罫線で見分ける */
+.markdown blockquote {
+  /* 本文(17px)より一段小さい16px相当。行間は本文と同じ実寸(28.05px)を
+     保ちたいので、縮めた比率のぶん line-height を割り戻す */
+  --blockquote-font-scale: 0.9375;
+
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+  font-size: calc(var(--blockquote-font-scale) * 1em);
+  line-height: calc(var(--ifm-line-height-base) / var(--blockquote-font-scale));
+  margin: 0 0 var(--ifm-leading);
+  padding: 1rem 1.25rem;
+}
+
+/* 出典付きの引用。出典は引用の面の中ではなく外(下)に置くので、
+   figure 自体は面を持たず、引用と出典を縦に並べるだけの入れ物にする
+   (組み替えているのは src/rehype/blockquoteCitation.ts)。
+   figure のブラウザ既定マージン(左右40px)もここで打ち消す */
+.markdown .quote {
+  margin: 0 0 var(--ifm-leading);
+}
+
+.markdown .quote > blockquote {
+  margin-bottom: 0;
+}
+
+/* 出典は引用本文と見せ方を変える。小さめ・薄めで右に寄せる */
+.markdown .quote > figcaption {
+  margin-top: 0.5em;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.875em;
+  text-align: right;
+}
