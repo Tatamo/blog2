@@ -59,6 +59,14 @@ article footer a:not([class]) {
   text-decoration: underline;
 }
 
+/* 本文の折り返し行の右端をそろえる(両端揃え)。日本語は単語間にスペースが
+   ないため、text-align: justify でも英語のような不自然な字間の間延びは
+   起きにくい。最終行は仕様上justifyの対象外になり左揃えのまま残るので、
+   段落末尾の短い行が無理に引き伸ばされることはない */
+.markdown p {
+  text-align: justify;
+}
+
 /* フッターは背景色を付けず、テキスト・アイコンも本文と同じ配色にする */
 .footer {
   --ifm-footer-background-color: transparent;
