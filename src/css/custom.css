@@ -23,6 +23,10 @@ html {
   --ifm-color-primary: #668000;
   --ifm-color-primary-dark: #5c7300;
   --ifm-color-primary-darker: #576d00;
+  /* 引用ブロックの左罫線用。基準色そのままだと濃すぎて目立ちすぎるため、
+     白を45%混ぜて薄めた色を固定値で持つ(Infimaのlight系変数は使わない。
+     ボタン等のホバー色にも波及してしまうため) */
+  --blockquote-border-color: #abb973;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   /* 基準文字サイズ。px決め打ちではなく%指定にすることで、
@@ -233,7 +237,7 @@ article header h2[class*='title_'] {
   --blockquote-font-scale: 0.9375;
 
   background-color: var(--ifm-color-emphasis-100);
-  border-left: 4px solid var(--ifm-color-primary);
+  border-left: 4px solid var(--blockquote-border-color);
   color: var(--ifm-font-color-base);
   font-size: calc(var(--blockquote-font-scale) * 1em);
   line-height: calc(var(--ifm-line-height-base) / var(--blockquote-font-scale));
